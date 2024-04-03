@@ -1,0 +1,33 @@
+Dividir o vídeo em 5 seções
+1 - Apresentação
+    ~ Pessoas
+      > Bruno (Apresentador)
+      > Hermann (Roteiro e produção)
+      > Augusto (Edição e produção)
+    ~ Projeto
+      > Nome do projeto
+2 - Explicar a área
+    ~ Animais
+    ~ Oportunidade (Problema)
+      > Obter dados comida
+      > Automatizar dist comida
+3 - Apresentar solução
+    ~ Dist ração automático
+      > Mostrar tech do dist
+        + Servo motor (exemplo)
+      > Mostrar tech peso
+        + esp32
+        + sensor de peso
+      > Mostrar tech dados
+        + C++ ESP32 (MQTT)
+        + Banco de dados SQL
+        + Server Python (HTTP)
+        + Frontend Javascript
+4 - Apresentar vantagens
+    ~ Controle de dados
+    ~ Controle dos gastos
+    ~ Automação da comida
+
+
+
+
