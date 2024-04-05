@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>COWTECH BRASIL</title>
 </head>
 <body>
-    
+    <header class="header">
+        <!-- hero com foto de gado com ração -->
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="title--hero">
+                    COWTECH<span>BRASIL</span>
+                </h1>
+                <p class="text--subtitle">
+                    Todos os dados necessários para seu Agronegócio.<br>
+                    Bem vindo ao novo mundo, com muito mais tecnologia.
+                </p>
+                <button class="button--hero">
+                    Clique para mais
+                </button>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <!-- display flex -->
+        <header class="main__header">
+            <h2 class="title">Dezembro, 2023</h2>
+            <div class="months">
+                <span class="months__item">O</span>
+                <span class="months__item">N</span>
+                <span class="months__item months__item--D months__item--activated">D</span>
+                <span class="months__item">J</span>
+                <span class="months__item months__item--F">F</span>
+                <span class="months__item">M</span>
+            </div>
+        </header>
+        <!-- seção de gasto -->
+        <section class="main__gastos">
+            <table class="table__gastos">
+                <tr>
+                    <th>
+                        Preço da ração
+                    </th>
+                    <th>
+                        Gasto no mês
+                    </th>
+                </tr>
+                <tr>
+                    <td class="preco-racao">
+                        R$ 4,20 / Kg
+                    </td>
+                    <td class="gasto-mes">
+                        R$ 1398,60
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!-- grafico img -->
+        <section class="main__grafic">
+            <h3 class="title--grafic">
+                Últimos 6 meses X KG de ração
+            </h3>
+            <img class="f-grafic" src="images/dezembro.jpg" alt="#">
+        </section>
+    </main>
+    <script>
+        const gastoMes = document.querySelector('.gasto-mes');
+        const mes = document.querySelector('.title');
+        const dezembro = document.querySelector('.months__item--D');
+        const fevereiro = document.querySelector('.months__item--F');
+        const grafico = document.querySelector('.f-grafic');
+
+        function blinkBlue() {
+            mes.classList.add('bluecolor');
+            gastoMes.classList.add('bluecolor');
+
+            setTimeout(function() {
+                mes.classList.add('blink');
+                mes.classList.remove('bluecolor');
+                gastoMes.classList.add('blink');
+                gastoMes.classList.remove('bluecolor');
+            }, 60);
+            
+
+            setTimeout(function() {
+                mes.classList.remove('blink');
+                gastoMes.classList.remove('blink');
+            }, 2100);
+        }
+
+        dezembro.addEventListener('click', function() {
+            mes.innerHTML = 'Dezembro, 2023';
+            fevereiro.style.color = '#333';
+            dezembro.style.color = '#fff';
+            gastoMes.innerHTML = 'R$ 1087,80';
+            grafico.src = 'images/dezembro.jpg';
+            blinkBlue();
+        })
+
+        fevereiro.addEventListener('click', function() {
+            mes.innerHTML = 'Fevereiro, 2024';
+            dezembro.style.color = '#333';
+            fevereiro.style.color = '#fff';
+            gastoMes.innerHTML = 'R$ 1398,60';
+            grafico.src = 'images/fevereiro.jpg';
+            blinkBlue();
+        })
+    </script>
 </body>
 </html>

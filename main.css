@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family: monospace;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+body {
+    background-color: #111;
+    padding-bottom: 120px;
+}
+
+.title {
+    font-size: 65px;
+}
+
+.title--grafic {
+    font-size: 42px;
+}
+
+.title--hero {
+    padding-top: 65px;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.title--hero span{
+    color: #14C6CC;
+}
+
+.text--subtitle {
+    padding-top: 100px;
+    font-size: 24px;
+}
+
+.button--hero {
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 180px;
+    padding: 18px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+}
+
+.button--hero:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.15s ease;
+}
+
+.f-grafic {
+    display: block;
+    margin: 50px auto;
+}
+
+.blink {
+    color: white;
+    transition: color 2s ease;
+}
+
+.bluecolor {
+    color: #14C6CC;
+}
+
+.hero {
+    background-image: url(images/vaca_hero.jpg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 0 5vw;
+}
+
+.main {
+    padding: 0 5vw;
+    margin-top: 180px;
+}
+
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.months {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    font-weight: bold;
+}
+
+.months__item {
+    font-size: 65px;
+    color: #333;
+}
+
+.months__item:hover {
+    cursor: pointer;
+}
+
+.months__item--activated {
+    color: white;
+}
+
+.main__gastos th {
+    text-align: start;
+    width: 320px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.main__gastos td {
+    font-size: 24px;
+}
+
+.main__grafic h3{
+    margin-top: 70px;
+    text-align: center;
+}
+
